@@ -33,6 +33,12 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    redirect_to root_path
+  end
+
   private
 
   # See https://guides.rubyonrails.org/getting_started.html#using-strong-parameters

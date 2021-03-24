@@ -44,6 +44,6 @@ class ArticlesController < ApplicationController
   # See https://guides.rubyonrails.org/getting_started.html#using-strong-parameters
   # for more info on the rationale for cleaning parameters before submitting to models
   def article_params
-    params.require(:article).permit(:title, :body)
+    params.require(:article).permit(:title, :body, :status)
   end
 end

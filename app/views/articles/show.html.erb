@@ -6,6 +6,7 @@
 </ul>
 <p><%= link_to "All Articles", articles_path %></p>
 <h2>Comments: </h2>
+This article has <%= @article.comments.public_count %> comments
 <% # The @article object is available to any partials 
    # rendered in the view because we defined it as an instance variable.
 %>
